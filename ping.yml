@@ -1,0 +1,8 @@
+---
+- name: Test Connectivity to Hosts
+  hosts: all  # or specify your group of hosts like 'Devices'
+  gather_facts: no
+
+  tasks:
+    - name: Ping Test
+      ansible.builtin.ping:
